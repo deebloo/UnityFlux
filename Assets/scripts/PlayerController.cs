@@ -13,6 +13,14 @@ public class PlayerController : MonoBehaviour {
 		speed = 10;
 	}
 
+	void OnEnable () {
+		ScoreStore.OnScoreUpdated += SpeedUp;
+	}
+
+	void OnDisable () {
+		ScoreStore.OnScoreUpdated -= SpeedUp;
+	}
+
 	// update here when physics are involved
     void FixedUpdate() {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -29,6 +37,13 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive (false);
 
 			Actions.UpdateScore();
+		}
+	}
+
+	// when the score is see if it should speed up or not
+	void SpeedUp (int score) {
+		if(score >= 3) {
+			speed += 25;
 		}
 	}
 }

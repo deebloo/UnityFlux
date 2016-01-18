@@ -11,7 +11,7 @@
 	}
 
 	// increment the score by one and fire the OnScoreUpdated event.
-	public static int updateScore() {
+	private static int updateScore() {
 		score++;
 
 		if(OnScoreUpdated != null) {
