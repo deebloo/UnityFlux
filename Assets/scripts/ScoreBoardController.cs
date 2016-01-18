@@ -1,0 +1,25 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class ScoreBoardController : MonoBehaviour {
+	private Text scoreBoard;
+
+	// Use this for initialization
+	void Start () {
+		scoreBoard = GetComponent<Text> ();
+		setCountText (ScoreStore.getScore());
+	}
+
+	void OnEnable () {
+		ScoreStore.OnScoreUpdated += setCountText;
+	}
+
+	void OnDisable () {
+		ScoreStore.OnScoreUpdated -= setCountText;
+	}
+
+	void setCountText (int score) {
+		scoreBoard.text = "Score: " + score.ToString();
+	}
+}
