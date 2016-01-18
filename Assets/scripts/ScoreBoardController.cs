@@ -21,5 +21,9 @@ public class ScoreBoardController : MonoBehaviour {
 
 	void setCountText (int score) {
 		scoreBoard.text = "Score: " + score.ToString();
+
+		if(score >= 5) {
+			scoreBoard.text = "You Win!";
+		}
 	}
 }
