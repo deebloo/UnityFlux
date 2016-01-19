@@ -6,16 +6,16 @@ Use flux pattern with Unity from the RollABall tutorial level.
 ```C#
 public static class Actions {
   // Create Score updated delegate and event
-	public delegate int ScoreUpdateAction();
-	public static event ScoreUpdateAction OnScoreUpdateAction;
-		
-	// Update the score
-	public static void UpdateScore() {
-		if(OnScoreUpdateAction != null) {
-		  // Fire the OnScoreUpdateAction event
-			OnScoreUpdateAction ();
-		}
-	}
+  public delegate int ScoreUpdateAction();
+  public static event ScoreUpdateAction OnScoreUpdateAction;
+  
+  // Update the score
+  public static void UpdateScore() {
+  	if(OnScoreUpdateAction != null) {
+  		// Fire the OnScoreUpdateAction event
+  		OnScoreUpdateAction ();
+  	}
+  }
 }
 
 ```
