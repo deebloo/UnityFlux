@@ -61,16 +61,6 @@ public static class ScoreStore {
 ...
 public class PlayerController : MonoBehaviour {
   ...
-  
-  // Add methods to event
-	void OnEnable () {
-		ScoreStore.OnScoreUpdated += SpeedUp;
-	}
-
-  // Remove methods from event
-	void OnDisable () {
-		ScoreStore.OnScoreUpdated -= SpeedUp;
-	}
 	
 	// update the score and desactivate collectables
 	void OnTriggerEnter(Collider other) {
