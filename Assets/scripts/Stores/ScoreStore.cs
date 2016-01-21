@@ -1,28 +1,32 @@
-﻿public static class ScoreStore {
-	static int score;
+﻿using Actions;
 
-	public delegate void ScoreUpdated(int score);
-	public static event ScoreUpdated OnScoreUpdated;
+namespace Stores {
+	public static class ScoreStore {
+		static int score;
 
-	static ScoreStore () {
-		score = 0;
+		public delegate void ScoreUpdated(int score);
+		public static event ScoreUpdated OnScoreUpdated;
 
-		Actions.OnScoreUpdateAction += updateScore;
-	}
+		static ScoreStore () {
+			score = 0;
 
-	// increment the score by one and fire the OnScoreUpdated event.
-	private static int updateScore() {
-		score++;
-
-		if(OnScoreUpdated != null) {
-			OnScoreUpdated (score);
+			ScoreActions.OnScoreUpdateAction += updateScore;
 		}
 
-		return score;
-	}
+		// increment the score by one and fire the OnScoreUpdated event.
+		private static int updateScore() {
+			score++;
 
-	// returns the score value;
-	public static int getScore() {
-		return score;
-	}
+			if(OnScoreUpdated != null) {
+				OnScoreUpdated (score);
+			}
+
+			return score;
+		}
+
+		// returns the score value;
+		public static int getScore() {
+			return score;
+		}
+	}	
 }

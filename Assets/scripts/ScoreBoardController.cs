@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Stores;
 
 public class ScoreBoardController : MonoBehaviour {
 	private Text scoreBoard;

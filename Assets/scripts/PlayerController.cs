@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Actions;
+using Stores;
 
 public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
@@ -8,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 
 	// Use this for initialization
-	void Start() {
+	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		speed = 10;
 	}
@@ -22,7 +24,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	// update here when physics are involved
-    void FixedUpdate() {
+    void FixedUpdate () {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 
@@ -32,11 +34,11 @@ public class PlayerController : MonoBehaviour {
     }
 
 	// update the score and desactivate collectables
-	void OnTriggerEnter(Collider other) {
+	void OnTriggerEnter (Collider other) {
 		if(other.gameObject.CompareTag("Pickup")) {
 			other.gameObject.SetActive (false);
 
-			Actions.UpdateScore();
+			ScoreActions.Update ();
 		}
 	}
 

@@ -1,0 +1,17 @@
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/UnityEngine.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/UnityEditor.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dblue/Documents/projects/UnityFlux/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dblue/Documents/projects/UnityFlux/obj/Debug/Assembly-CSharp.dll
+/Users/dblue/Documents/projects/UnityFlux/obj/Debug/Assembly-CSharp.dll.mdb
